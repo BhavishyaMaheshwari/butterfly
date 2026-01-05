@@ -37,10 +37,19 @@ Butterfly follows a strict separation of concerns:
 ### Installation
 
 ```bash
-# 1. Install Python dependencies
+# 1. Create a virtual environment
+python -m venv venv
+
+# 2. Activate the virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+# venv\Scripts\activate
+
+# 3. Install Python dependencies
 pip install -r requirements.txt
 
-# 2. Install frontend dependencies
+# 4. Install frontend dependencies
 cd frontend
 npm install
 cd ..
@@ -48,15 +57,23 @@ cd ..
 
 ### Running Butterfly
 
+You need to start both the backend and frontend servers:
+
+**Terminal 1 - Backend:**
 ```bash
-# Start the application
 python butterfly.py
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd frontend
+npm run dev
 ```
 
 This will:
 1. Start the backend server on `http://localhost:8000`
 2. Start the frontend dev server on `http://localhost:3000`
-3. Open your browser automatically
+3. Open your browser to the frontend URL
 
 ## Usage
 
