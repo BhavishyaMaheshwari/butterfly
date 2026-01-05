@@ -1,0 +1,14 @@
+.code-editor {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--bg-secondary);
+}
+
+.code-editor .monaco-editor {
+    font-family: var(--font-mono);
+}
+
+.code-editor .monaco-editor .margin {
+    background-color: var(--bg-secondary);
+}

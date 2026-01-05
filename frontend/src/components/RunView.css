@@ -1,0 +1,185 @@
+.run-view {
+    animation: fadeIn var(--transition-base);
+}
+
+.run-view__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--space-2xl);
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+}
+
+.run-view__title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.run-view__title h2 {
+    margin-bottom: var(--space-xs);
+}
+
+.run-view__actions {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+/* Logs Card */
+.logs-card {
+    margin-bottom: var(--space-lg);
+    position: relative;
+}
+
+.logs-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+}
+
+.logs-card__header h3 {
+    margin: 0;
+}
+
+.logs-card__actions {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.logs-container {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar for logs */
+.logs-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.logs-container::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.logs-container::-webkit-scrollbar-thumb {
+    background: var(--bg-elevated);
+    border-radius: 6px;
+    border: 2px solid var(--bg-primary);
+}
+
+.logs-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logs-content {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+    padding: var(--space-lg);
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    min-height: 200px;
+}
+
+.logs-loading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-tertiary);
+    font-style: italic;
+}
+
+/* Scroll buttons */
+.logs-scroll-buttons {
+    position: absolute;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    z-index: 10;
+}
+
+.logs-scroll-btn {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm);
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-md);
+}
+
+.logs-scroll-btn:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.logs-scroll-btn.active {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+/* Status Card */
+.status-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    animation: fadeIn var(--transition-base);
+}
+
+.status-card h4 {
+    margin-bottom: var(--space-xs);
+}
+
+.status-card p {
+    margin: 0;
+}
+
+.status-card--success {
+    border-left: 4px solid var(--accent-success);
+    background-color: var(--accent-success-bg);
+}
+
+.status-card--error {
+    border-left: 4px solid var(--accent-error);
+    background-color: var(--accent-error-bg);
+}
+
+.status-card--running {
+    border-left: 4px solid var(--accent-warning);
+    background-color: var(--accent-warning-bg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .run-view__header {
+        flex-direction: column;
+    }
+
+    .run-view__actions {
+        width: 100%;
+    }
+
+    .logs-container {
+        max-height: 400px;
+    }
+}

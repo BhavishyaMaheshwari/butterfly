@@ -1,0 +1,33 @@
+.butterfly-card {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    transition: all var(--transition-base);
+}
+
+.butterfly-card--glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.butterfly-card--elevated {
+    background-color: var(--bg-elevated);
+    box-shadow: var(--shadow-md);
+}
+
+.butterfly-card--hoverable:hover {
+    border-color: var(--border-medium);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.butterfly-card--clickable {
+    cursor: pointer;
+}
+
+.butterfly-card--clickable:active {
+    transform: translateY(0);
+}

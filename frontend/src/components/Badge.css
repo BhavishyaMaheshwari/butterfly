@@ -1,0 +1,62 @@
+.butterfly-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+}
+
+/* Sizes */
+.butterfly-badge--sm {
+    padding: 2px 8px;
+    font-size: var(--font-size-xs);
+}
+
+.butterfly-badge--md {
+    padding: 4px 12px;
+    font-size: var(--font-size-sm);
+}
+
+/* Variants */
+.butterfly-badge--default {
+    background-color: var(--bg-elevated);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-subtle);
+}
+
+.butterfly-badge--success {
+    background-color: var(--accent-success-bg);
+    color: var(--accent-success);
+    border: 1px solid var(--accent-success);
+}
+
+.butterfly-badge--warning {
+    background-color: var(--accent-warning-bg);
+    color: var(--accent-warning);
+    border: 1px solid var(--accent-warning);
+}
+
+.butterfly-badge--error {
+    background-color: var(--accent-error-bg);
+    color: var(--accent-error);
+    border: 1px solid var(--accent-error);
+}
+
+.butterfly-badge--info {
+    background-color: var(--accent-info-bg);
+    color: var(--accent-info);
+    border: 1px solid var(--accent-info);
+}
+
+.butterfly-badge__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875em;
+}
+
+.butterfly-badge__text {
+    line-height: 1;
+}
