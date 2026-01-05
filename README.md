@@ -246,5 +246,8 @@ pytest backend/tests/test_domain_model.py
 - NLP and CV pipelines
 - Plugin system
 
+### Testing
 
+- Workspace folder is used for local storage of datasets, experiments, and runs. So, it might not preexist in your local project directory.
+- If the application does not create one, you are lowkey needed to create one yourself in the format given in the file structure.
 
