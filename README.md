@@ -229,19 +229,5 @@ pytest backend/tests/test_domain_model.py
 - NLP and CV pipelines
 - Plugin system
 
-## License
 
-MIT
 
-## Contributing
-
-Butterfly is designed to be hackable. The codebase follows clean architecture principles with clear separation between domain logic, storage, and execution.
-
-Key extension points:
-- Add new block implementations in `backend/ml/blocks/`
-- Add new ML frameworks in `backend/ml/frameworks/`
-- Customize UI in `frontend/src/`
-
----
-
-**Built with ❤️ for ML practitioners who want transparency and control.**
